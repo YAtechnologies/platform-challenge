@@ -1,5 +1,7 @@
 # Yassir take-home platform engineering challenge
 
+**Note**: Do not **fork** this repository. Just clone it locally. We do not accept pull requests.
+
 This repository acts as a boilerplate to get you started tackling Yassir's platform engineering challenge.
 
 The stack used here is close to what we use for Infrastructure As Code. Mainly:
