@@ -1,6 +1,11 @@
-# Yassir take-home platform engineering challenge
+# Yassir Platform Engineering Take Home Challenge
 
-**Note**: Do not **fork** this repository. Just clone it locally. We do not accept pull requests.
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/YAtechnologies/platform-challenge)
+
+**Note**: Do not **fork** this repository. Instead:
+- Clone it locally. 
+- Create a new **private** repository on Github and invite your interviewers (Github usernames will be provided to you). 
+- We do not accept pull requests.
 
 This repository acts as a boilerplate to get you started tackling Yassir's platform engineering challenge.
 
@@ -13,6 +18,8 @@ The stack used here is close to what we use for Infrastructure As Code. Mainly:
 
 Once you have the above-mentioned tools installed you can run `pnpm install` to install the npm/Typescript dependencies.
 
+For your convenience, we also provided a `.gitpod.yml` file so you can have an already setup environment on GitPod. Simply click "Open in Gitpod" button above. 
+
 ## About the challenge
 The challenge is about showcasing your ability to implement and manage infrastructure using code. You'll need to use Hashicups.
 
@@ -24,14 +31,14 @@ The gist of the work is mostly translating the [CRUD operations](https://develop
 
 ## The deliverable
 The final output should be this repository updated with your code, configs and setup. We should be able to:
-- Have your repository in a zip format.
-- Able to run `pnpm install` for all required/new dependencies.
-- A way or a command to run Hashicups APIs locally (feel free to bundle it in a docker compose file).
-- README.md updated, or a `help` file included on how to provision the infrastructure using Hashicups.
+- Run `pnpm install` for all required/new dependencies.
+- A way or a command to run Hashicups APIs locally. We recommend using docker compose for that. The GitPod environment already has docker compose installed for you.
+- `README.md` file updated, or a `help` file included on how to provision the infrastructure using Hashicups.
 - Be able to provision the CRUD operation for the coffee-shop. The Infrastructure as Code should go under `packages/iac`.
 - A way to destroy/cleanup the infrastructure.
-- All using cdktf, not plain terraform.
+- All using cdktf, not plain terraform (no HCL).
 - Bonus points for using [Constructs](https://developer.hashicorp.com/terraform/cdktf/concepts/constructs) and [CDKTF best practices](https://developer.hashicorp.com/terraform/cdktf/create-and-deploy/best-practices).
+- A simple testing suite that makes sure CDKTF synthesizes the infrastructure correctly. 
 
 ### Having troubles?
 If you're encountering any troubles, feel free to send an email to `platform@yassir.com`.
