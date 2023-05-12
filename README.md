@@ -3,8 +3,8 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/YAtechnologies/platform-challenge)
 
 **Note**: Do not **fork** this repository. Instead:
-- Clone it locally. 
-- Create a new **private** repository on Github and invite your interviewers (Github usernames will be provided to you). 
+- Clone it locally.
+- Create a new **private** repository on Github and invite your interviewers (Github usernames will be provided to you).
 - We do not accept pull requests.
 
 This repository acts as a boilerplate to get you started tackling Yassir's platform engineering challenge.
@@ -18,7 +18,7 @@ The stack used here is close to what we use for Infrastructure As Code. Mainly:
 
 Once you have the above-mentioned tools installed you can run `pnpm install` to install the npm/Typescript dependencies.
 
-For your convenience, we also provided a `.gitpod.yml` file so you can have an already setup environment on GitPod. Simply click "Open in Gitpod" button above. 
+For your convenience, we also provided a `.gitpod.yml` file so you can have an already setup environment on GitPod. Simply click "Open in Gitpod" button above.
 
 ## About the challenge
 The challenge is about showcasing your ability to implement and manage infrastructure using code. You'll need to use Hashicups.
@@ -35,10 +35,11 @@ The final output should be this repository updated with your code, configs and s
 - A way or a command to run Hashicups APIs locally. We recommend using docker compose for that. The GitPod environment already has docker compose installed for you.
 - `README.md` file updated, or a `help` file included on how to provision the infrastructure using Hashicups.
 - Be able to provision the CRUD operation for the coffee-shop. The Infrastructure as Code should go under `packages/iac`.
+- Have at least two different coffee types, [with different ingredients, price and description](https://registry.terraform.io/providers/hashicorp/hashicups/latest/docs/data-sources/coffee). They should be treated as two completely different products for our orders.
 - A way to destroy/cleanup the infrastructure.
 - All using cdktf, not plain terraform (no HCL).
 - Bonus points for using [Constructs](https://developer.hashicorp.com/terraform/cdktf/concepts/constructs) and [CDKTF best practices](https://developer.hashicorp.com/terraform/cdktf/create-and-deploy/best-practices).
-- A simple testing suite that makes sure CDKTF synthesizes the infrastructure correctly. 
+- A simple testing suite that makes sure CDKTF synthesizes the infrastructure correctly.
 
 ### Having troubles?
 If you're encountering any troubles, feel free to send an email to `platform@yassir.com`.
